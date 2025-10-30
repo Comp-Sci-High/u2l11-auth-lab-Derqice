@@ -22,7 +22,7 @@ let requestURL= "https://"+body+"?q=raccoon&limit=1&api_key="+key
 async function fetching(url){
 let response= await fetch(url)
 let data= await response.json()
-console.log(data)
+console.log(data.data[0].id)
 return data
 }
 
